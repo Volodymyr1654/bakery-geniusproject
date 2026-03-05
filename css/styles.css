@@ -56,7 +56,7 @@ body {
   padding: 48px 0;
 }
 
-.container{
+.container {
   width: 100%;
   max-width: 1288px;
   margin: 0 auto;
@@ -78,7 +78,30 @@ address {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+
+/* Header */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 /* Button */
@@ -104,7 +127,6 @@ ul {
 
 .nav-links:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
 }
 
 .hero-title {
@@ -121,13 +143,20 @@ ul {
 }
 
 .adventages-list {
-  background-color: var(--color-brand-light);
-  color: #faf4ea;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .adventages-item {
   font-weight: 300;
   font-size: 20px;
+  color: var(--color-primary-light);
+}
+
+.adventages-section {
+  padding: 16px 0;
+  background-color: var(--color-brand-light);
 }
 
 .section-title {
@@ -170,7 +199,7 @@ ul {
   font-size: 24px;
 }
 
-.formats-title{
+.formats-title {
   margin-bottom: 80px;
 }
 
@@ -181,7 +210,7 @@ ul {
 
 /* Contact section */
 
-.contacts-title{
+.contacts-title {
   margin-bottom: 16px;
 }
 
