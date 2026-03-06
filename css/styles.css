@@ -175,6 +175,17 @@ ul {
   color: var(--color-brand-light);
   font-weight: 600;
 }
+
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions-content {
+  max-width: 710px;
+}
+
 .traditions-text .uppercase {
   color: var(--color-brand-light);
   text-transform: uppercase;
@@ -194,7 +205,8 @@ ul {
   font-size: 40px;
 }
 
-.format-title {
+/* Formats section */
+.formats-title {
   font-weight: 600;
   font-size: 24px;
 }
@@ -206,6 +218,22 @@ ul {
 .format-text {
   font-weight: 300;
   font-size: 14px;
+}
+
+.formats-card {
+  border: 1px solid lightgray; /*remove*/
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.cards-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
 }
 
 /* Contact section */
